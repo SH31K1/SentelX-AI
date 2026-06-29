@@ -1,0 +1,94 @@
+# ============================
+# Python
+# ============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+*.whl
+
+# ============================
+# Virtual environments
+# ============================
+.venv/
+venv/
+env/
+ENV/
+
+# ============================
+# Local configuration / secrets
+# ============================
+*.env
+.env
+.env.*
+*.key
+*.pem
+config.local.*
+
+# ============================
+# Testing & type checking
+# ============================
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.tox/
+
+# ============================
+# Jupyter
+# ============================
+.ipynb_checkpoints/
+
+# ============================
+# Logs
+# ============================
+*.log
+logs/
+
+# ============================
+# Local scan artifacts and reports (ToTheRoot-specific)
+# ============================
+scans/
+*_report.md
+*_ai_analysis.txt
+
+# ============================
+# Local database / RAG store
+# ============================
+totheroot_db/
+chroma_db/
+*.db
+*.sqlite3
+
+# ============================
+# Local model weights (if dropped in-repo by mistake)
+# ============================
+*.gguf
+*.safetensors
+*.bin
+
+# ============================
+# Exclude the local agent simulation file
+# ============================
+cap_agent.py
+
+# ============================
+# IDE files
+# ============================
+.vscode/
+.idea/
+*.swp
+*~
+
+# ============================
+# OS files
+# ============================
+.DS_Store
+Thumbs.db
+desktop.ini
